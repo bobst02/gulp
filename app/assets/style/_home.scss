@@ -1,0 +1,119 @@
+// =========================== banner ===========================
+.banner {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true);
+  background-size: cover;
+
+  &_title {
+    span {
+      font-size: 24px;
+    }
+  }
+
+  &_btn {
+    width: 27%;
+    display: inline-block;
+  }
+}
+
+// =========================== service ===========================
+.service {
+  &_list {
+    li {
+      width: 100%;
+    }
+
+    img {
+      width: 100px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &_title {
+    font-size: 24px;
+    font-weight: bold;
+    color: $primary-dark;
+    text-align: center;
+  }
+}
+
+// =========================== glasses ===========================
+
+// =========================== signature ===========================
+.signature {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-sm.png?raw=true);
+
+  &_img1 {
+    content: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-1-sm.png?raw=true');
+  }
+
+  &_img2 {
+    content: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-2-sm.png?raw=true');
+  }
+}
+
+// =========================== customer card ===========================
+.card {
+  box-shadow: 0px 2px 6px #00000029;
+  border: 1px solid #DEE2E6;
+  border-radius: 4px;
+
+  span {
+    display: block;
+  }
+
+  &_list {
+    height: 205px;
+  }
+
+  &_date {
+    font-size: 14px;
+    color: #707070;
+  }
+}
+
+// =========================== contact form ===========================
+.form {
+  label {
+    display: block;
+  }
+
+  input {
+    &[type="text"] {
+      @include form;
+    }
+
+    &[type="number"] {
+      @include form;
+    }
+
+    &[type="email"] {
+      @include form;
+    }
+
+    &[type="checkbox"] {
+      margin: 4px;
+      width: 16px;
+      height: 16px;
+      font-size: 0;
+      vertical-align: top;
+    }
+  }
+
+  textarea {
+    @include form;
+    height: 136px;
+    display: block;
+  }
+
+  span {
+    display: block;
+  }
+
+  &_btn {
+    padding: 16px 0;
+    border: none;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}

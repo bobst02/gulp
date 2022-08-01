@@ -1,0 +1,42 @@
+// =========================== header ===========================
+.header {
+  height: 80px;
+
+  &_logo {
+    width: 80px;
+    height: 48.57px;
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/logo-white.png?raw=true);
+    background-size: cover;
+  }
+
+  &_nav {
+
+    li {
+      width: 50%;
+      border: 1px solid #fff;
+    }
+  }
+}
+
+// =========================== footer ===========================
+.footer {
+  &_nav {
+    display: none;
+  }
+
+  &_contact {
+    span {
+      font-size: 18px;
+      vertical-align: middle;
+    }
+  }
+
+  &_link {
+    img {
+      width: 24px;
+    }
+  }
+  &_copyright{
+    border-top: 1px solid #fff;
+  }
+}
