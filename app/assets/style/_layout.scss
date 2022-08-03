@@ -7,13 +7,43 @@
     height: 48.57px;
     background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/logo-white.png?raw=true);
     background-size: cover;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
   }
 
   &_nav {
+    display: none;
+
+    a {
+      &:hover {
+        box-shadow: 0 2px #fff;
+      }
+    }
+  }
+
+  &_m-nav {
 
     li {
       width: 50%;
       border: 1px solid #fff;
+
+      &:hover {
+        background-color: $primary-dark;
+      }
+    }
+  }
+
+  @include pad {
+    justify-content: space-between;
+
+    &_nav {
+      display: flex;
+      font-size: 20px;
+    }
+
+    &_m-nav {
+      display: none;
     }
   }
 }
@@ -22,9 +52,16 @@
 .footer {
   &_nav {
     display: none;
+
+    a:hover {
+      box-shadow: 0 2px #fff;
+    }
   }
 
   &_contact {
+    a:hover {
+      color: $primary-light;
+    }
     span {
       font-size: 18px;
       vertical-align: middle;
@@ -34,9 +71,77 @@
   &_link {
     img {
       width: 24px;
+
+      &:hover {
+        transform: scale(1.2);
+      }
     }
   }
-  &_copyright{
+
+  &_copyright {
     border-top: 1px solid #fff;
+    a:hover {
+      box-shadow: 0 2px #fff;
+    }
+  }
+
+  @include pad {
+    &_nav {
+      display: flex;
+      margin-bottom: 24px;
+
+      li {
+        padding: 8px 0;
+      }
+    }
+
+    &_link {
+      img {
+        width: 40px;
+      }
+    }
+
+    &_contact {
+      font-size: 36px;
+
+      span {
+        font-size: 36px;
+      }
+    }
+
+    &_copyright {
+      display: flex;
+      justify-content: space-between;
+
+      ul {
+        display: flex;
+        margin-top: 16px;
+        font-size: 14px;
+      }
+    }
+  }
+
+  @include pc {
+    &_nav {
+      li {
+        padding: 12px 0;
+      }
+    }
+
+    &_link {
+      img {
+        width: 48px;
+      }
+    }
+
+    &_copyright {
+      p {
+        padding-top: 32px;
+      }
+
+      ul {
+        margin-top: 32px;
+      }
+    }
   }
 }

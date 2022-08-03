@@ -1,16 +1,17 @@
 $primary:#AA0601;
 $primary-dark:#650300;
+$primary-light:lighten($primary,10%);
 $secondary:#FBF2F2;
 // =========================== rwd ===========================
 
 @mixin pad {
-  @media (max-width:768px) {
+  @media (min-width:768px) {
     @content;
   }
 }
 
 @mixin pc{
-  @media (max-width:1200px) {
+  @media (min-width:1200px) {
     @content;
   }
 }
