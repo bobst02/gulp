@@ -85,6 +85,10 @@
 
 // =========================== glasses ===========================
 .glasses {
+  img:hover{
+    opacity: 0.7;
+    transition: 0.5s;
+  }
   @include pad {
 
     &_list {
