@@ -1,0 +1,97 @@
+// =========================== blog  nav ===========================
+.blog {
+  &_nav {
+    display: none;
+
+    span {
+      font-size: 30px;
+    }
+
+    @include pad {
+      display: flex;
+    }
+  }
+
+  // =========================== blog ===========================
+
+  &_list {
+    margin-bottom: 24px;
+  }
+
+  img {
+    margin-bottom: 8px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  span {
+    display: block;
+  }
+
+  &_date {
+    opacity: 0.7;
+  }
+
+  &_content {
+    display: none;
+    color: #555555;
+  }
+
+  &_more {
+    display: none;
+    font-size: 36px;
+    font-weight: 900;
+    text-align: right;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+
+  @include pad {
+    &_section {
+      li {
+        width: 48.5%;
+      }
+    }
+
+    &_content {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 6;
+      -webkit-box-orient: vertical;
+    }
+  }
+
+  @include pc {
+    h3 {
+      font-size: 20px;
+
+      span {
+        font-size: 32px;
+      }
+    }
+
+    &_content {
+      margin-top: 16px;
+      font-size: 20px;
+      -webkit-line-clamp: 5;
+    }
+
+    &_list {
+      position: relative;
+      margin-bottom: 60px;
+    }
+
+    &_more {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+}

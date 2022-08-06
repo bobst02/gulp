@@ -1,14 +1,14 @@
 .container {
-  max-width: 348px;
+  max-width: 372px;
   margin: 0 auto;
   padding: 0 12px;
 
   @include pad {
-    max-width: 696px;
+    max-width: 720px;
   }
 
   @include pc {
-    max-width: 1296px;
+    max-width: 1320px;
   }
 }
 
@@ -131,7 +131,9 @@ body {
   font-family: Roboto, 'Noto Sans TC', sans-serif;
   line-height: 1.5;
 }
-
+.f-1{
+  font-size: 20px;
+}
 .f-2 {
   font-size: 24px;
 }
@@ -188,6 +190,22 @@ body {
   font-weight: 900;
   text-align: center;
   ;
+}
+
+.title-mark {
+  font-size: 24px;
+  font-weight: bold;
+
+  &::before {
+    display: inline-block;
+    content: "　";
+    width: 8px;
+    margin-right: 16px;
+    background-color: #9F1213;
+  }
+  @include pad{
+    font-size: 48px;
+  }
 }
 
 .pagination {
@@ -266,6 +284,10 @@ body {
   background-color: $primary;
   color: #fff;
 }
+.bg-primary-dark {
+  background-color: $primary-dark;
+  color: #fff;
+}
 
 .bg-secondary {
   background-color: $secondary;
@@ -273,6 +295,10 @@ body {
 
 .bg-white {
   background-color: #fff;
+}
+.bg-black{
+  background-color: #000;
+  color: #fff;
 }
 
 .f-primary {

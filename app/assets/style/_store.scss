@@ -1,0 +1,129 @@
+.store {
+  // =========================== store select ===========================
+
+  &_select {
+    select {
+      width: 276px;
+      padding: 6px;
+      font-size: 18px;
+      color: #495057;
+      opacity: 0.75;
+      display: block;
+    }
+
+    @include pad {
+      font-size: 24px;
+
+      select {
+        width: 304px;
+      }
+    }
+  }
+
+  // =========================== store list ===========================
+
+  &_list {
+
+    &_card {
+      margin-bottom: 24px;
+    }
+
+    &_title {
+      padding: 8px 24px;
+      border: 1px solid #00000020;
+      border-bottom: none;
+      font-size: 24px;
+    }
+
+    &_infor {
+      padding: 16px 24px;
+      border: 1px solid #00000020;
+      font-size: 20px;
+
+      span {
+        font-size: 18px;
+      }
+    }
+
+    &_btn {
+      font-size: 19px;
+
+      &:hover {
+        background-color: $primary-dark;
+      }
+    }
+
+    @include pad {
+      justify-content: space-between;
+      margin-bottom: -24px;
+
+      &_card {
+        width: 48.5%;
+      }
+    }
+
+    @include pc {
+      margin: 0 -12px;
+      justify-content: start;
+
+      &_card {
+        width: 31%;
+        margin-left: 12px;
+        margin-right: 12px;
+      }
+
+      &_img {
+        content: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/storepage-1.png?raw=true');
+      }
+    }
+  }
+
+  // =========================== store page ===========================
+  &_page {
+    @include pad {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &_li {
+        width: 48.5%;
+      }
+    }
+
+    @include pc {
+      display: block;
+      width: 40%;
+
+      &_li {
+        width: 100%;
+      }
+    }
+
+  }
+
+  // =========================== store map ===========================
+  &_map {
+    margin: 24px 0;
+    max-width: 100%;
+    width: 746px;
+    height: 208px;
+
+    @include pad {
+      height: 414px;
+    }
+
+    @include pc {
+      width: 57.5%;
+      margin-top: 0;
+    }
+  }
+}
+
+// =========================== faq ===========================
+.faq {
+  margin-bottom: -32px;
+
+  .mb-3 {
+    margin-bottom: 32px;
+  }
+}
