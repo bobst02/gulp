@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -142,20 +143,23 @@ a {
   display: block; }
 
 .container {
-  max-width: 348px;
+  max-width: 372px;
   margin: 0 auto;
   padding: 0 12px; }
   @media (min-width: 768px) {
     .container {
-      max-width: 696px; } }
+      max-width: 720px; } }
   @media (min-width: 1200px) {
     .container {
-      max-width: 1296px; } }
+      max-width: 1320px; } }
 
 .d-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+
+.d-block {
+  display: block; }
 
 .flex-column {
   -webkit-box-orient: vertical;
@@ -215,6 +219,9 @@ a {
     .mr-1 {
       margin-right: 16px; } }
 
+.mr-2 {
+  margin-right: 16px; }
+
 .mr-6 {
   margin-right: 48px; }
 
@@ -254,6 +261,9 @@ a {
 body {
   font-family: Roboto, 'Noto Sans TC', sans-serif;
   line-height: 1.5; }
+
+.f-1 {
+  font-size: 20px; }
 
 .f-2 {
   font-size: 24px; }
@@ -298,6 +308,19 @@ body {
   font-weight: 900;
   text-align: center; }
 
+.title-mark {
+  font-size: 24px;
+  font-weight: bold; }
+  .title-mark::before {
+    display: inline-block;
+    content: "　";
+    width: 8px;
+    margin-right: 16px;
+    background-color: #9F1213; }
+  @media (min-width: 768px) {
+    .title-mark {
+      font-size: 48px; } }
+
 .pagination {
   margin-bottom: 24px; }
   .pagination li {
@@ -340,11 +363,19 @@ body {
   background-color: #AA0601;
   color: #fff; }
 
+.bg-primary-dark {
+  background-color: #650300;
+  color: #fff; }
+
 .bg-secondary {
   background-color: #FBF2F2; }
 
 .bg-white {
   background-color: #fff; }
+
+.bg-black {
+  background-color: #000;
+  color: #fff; }
 
 .f-primary {
   color: #AA0601; }
@@ -504,6 +535,9 @@ body {
   .service_list li {
     width: 23.5%;
     margin-bottom: 0; } }
+
+.glasses li {
+  width: 100%; }
 
 .glasses img:hover {
   opacity: 0.7;
@@ -705,14 +739,230 @@ body {
         width: 23.5%;
         margin-bottom: 80px; }
       .product_list-pc {
-        display: block; } }
-  .product_list_sunglasses li {
-    width: 32%; }
+        display: block; }
+      .product_list_sunglasses li {
+        width: 32%; } }
 
 .product_color {
   margin-right: 8px;
   width: 24px;
   height: 24px;
   border-radius: 4px; }
+
+.store_select select {
+  width: 276px;
+  padding: 6px;
+  font-size: 18px;
+  color: #495057;
+  opacity: 0.75;
+  display: block; }
+
+@media (min-width: 768px) {
+  .store_select {
+    font-size: 24px; }
+    .store_select select {
+      width: 304px; } }
+
+.store_list_card {
+  margin-bottom: 24px; }
+
+.store_list_title {
+  padding: 8px 24px;
+  border: 1px solid #00000020;
+  border-bottom: none;
+  font-size: 24px; }
+
+.store_list_infor {
+  padding: 16px 24px;
+  border: 1px solid #00000020;
+  font-size: 20px; }
+  .store_list_infor span {
+    font-size: 18px; }
+
+.store_list_btn {
+  font-size: 19px; }
+  .store_list_btn:hover {
+    background-color: #650300; }
+
+@media (min-width: 768px) {
+  .store_list {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: -24px; }
+    .store_list_card {
+      width: 48.5%; } }
+
+@media (min-width: 1200px) {
+  .store_list {
+    margin: 0 -12px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start; }
+    .store_list_card {
+      width: 31%;
+      margin-left: 12px;
+      margin-right: 12px; }
+    .store_list_img {
+      content: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/storepage-1.png?raw=true"); } }
+
+@media (min-width: 768px) {
+  .store_page {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .store_page_li {
+      width: 48.5%; } }
+
+@media (min-width: 1200px) {
+  .store_page {
+    display: block;
+    width: 40%; }
+    .store_page_li {
+      width: 100%; } }
+
+.store_map {
+  margin: 24px 0;
+  max-width: 100%;
+  width: 746px;
+  height: 208px; }
+  @media (min-width: 768px) {
+    .store_map {
+      height: 414px; } }
+  @media (min-width: 1200px) {
+    .store_map {
+      width: 57.5%;
+      margin-top: 0; } }
+
+.faq {
+  margin-bottom: -32px; }
+  .faq .mb-3 {
+    margin-bottom: 32px; }
+
+.blog_nav {
+  display: none; }
+  .blog_nav span {
+    font-size: 30px; }
+  @media (min-width: 768px) {
+    .blog_nav {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
+
+.blog_list {
+  margin-bottom: 24px; }
+
+.blog img {
+  margin-bottom: 8px; }
+  .blog img:hover {
+    opacity: 0.8; }
+
+.blog span {
+  display: block; }
+
+.blog_date {
+  opacity: 0.7; }
+
+.blog_content {
+  display: none;
+  color: #555555; }
+
+.blog_more {
+  display: none;
+  font-size: 36px;
+  font-weight: 900;
+  text-align: right; }
+  .blog_more:hover {
+    color: #AA0601; }
+
+@media (min-width: 768px) {
+  .blog_section li {
+    width: 48.5%; }
+  .blog_content {
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical; } }
+
+@media (min-width: 1200px) {
+  .blog h3 {
+    font-size: 20px; }
+    .blog h3 span {
+      font-size: 32px; }
+  .blog_content {
+    margin-top: 16px;
+    font-size: 20px;
+    -webkit-line-clamp: 5; }
+  .blog_list {
+    position: relative;
+    margin-bottom: 60px; }
+  .blog_more {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0; } }
+
+.blog_taglist {
+  display: none; }
+
+.blog_article {
+  color: #555555; }
+
+.blog_pagination {
+  display: none;
+  margin-top: 16px;
+  margin-bottom: 64px; }
+  .blog_pagination span {
+    vertical-align: middle; }
+
+.blog_share {
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #000; }
+  .blog_share img {
+    width: 24px; }
+
+@media (min-width: 768px) {
+  .blog_tag {
+    font-size: 24px; }
+  .blog_title {
+    margin-bottom: 24px;
+    font-size: 24px; }
+    .blog_title span {
+      font-size: 48px; }
+  .blog_page {
+    width: 72%; }
+  .blog_article img {
+    margin-bottom: 16px; }
+  .blog_article li {
+    margin-bottom: 24px; }
+  .blog_taglist {
+    display: block;
+    width: 24%; }
+    .blog_taglist span {
+      font-size: 24px;
+      vertical-align: middle; }
+  .blog_pagination {
+    display: block; } }
+
+@media (min-width: 1200px) {
+  .blog_taglist h4 {
+    font-size: 32px; }
+  .blog_taglist span {
+    font-size: 32px; }
+  .blog_taglist a {
+    font-size: 24px; }
+  .blog_article li {
+    margin-bottom: 40px; }
+  .blog_pagination {
+    width: 72%; } }
 
 /*# sourceMappingURL=all.css.map */
