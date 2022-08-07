@@ -94,4 +94,101 @@
     }
   }
 
+  &_taglist {
+    display: none;
+  }
+
+  &_article {
+    color: #555555;
+  }
+
+  &_pagination {
+    display: none;
+    margin-top: 16px;
+    margin-bottom: 64px;
+
+    span {
+      vertical-align: middle;
+    }
+  }
+
+  &_share {
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #000;
+
+    img {
+      width: 24px;
+    }
+  }
+
+  @include pad {
+    &_tag {
+      font-size: 24px;
+    }
+
+    &_title {
+      margin-bottom: 24px;
+      font-size: 24px;
+
+      span {
+        font-size: 48px;
+      }
+    }
+
+    &_page {
+      width: 72%;
+    }
+
+    &_article {
+      img {
+        margin-bottom: 16px;
+      }
+
+      li {
+        margin-bottom: 24px;
+      }
+    }
+
+    &_taglist {
+      display: block;
+      width: 24%;
+
+      span {
+        font-size: 24px;
+        vertical-align: middle;
+      }
+    }
+
+    &_pagination {
+      display: block;
+    }
+  }
+
+  @include pc {
+    &_taglist {
+      h4 {
+        font-size: 32px;
+      }
+
+      span {
+        font-size: 32px;
+      }
+
+      a {
+        font-size: 24px;
+      }
+    }
+
+    &_article {
+      li {
+        margin-bottom: 40px;
+      }
+    }
+
+    &_pagination {
+      width: 72%;
+    }
+  }
+
 }

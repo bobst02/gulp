@@ -17,6 +17,9 @@
 .d-flex {
   display: flex;
 }
+.d-block{
+  display: block;
+}
 
 .flex-column {
   flex-direction: column;
@@ -78,7 +81,9 @@
     margin-right: 16px;
   }
 }
-
+.mr-2{
+  margin-right: 16px;
+}
 .mr-6 {
   margin-right: 48px;
 }
