@@ -186,7 +186,7 @@
       @include form;
     }
 
-    &[type="number"] {
+    &[type="tel"] {
       @include form;
     }
 

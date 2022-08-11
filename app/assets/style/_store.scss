@@ -53,12 +53,23 @@
       }
     }
 
+    &_img {
+      min-width: 348px;
+      height: 234px;
+      background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/store-1.png?raw=true);
+      background-size: cover;
+    }
+
     @include pad {
       justify-content: space-between;
       margin-bottom: -24px;
 
       &_card {
         width: 48.5%;
+      }
+      &_img{
+        min-width: 337px;
+        height: 224px;
       }
     }
 
@@ -73,7 +84,7 @@
       }
 
       &_img {
-        content: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/storepage-1.png?raw=true');
+        background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/storepage-1.png?raw=true);
       }
     }
   }
