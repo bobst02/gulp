@@ -608,7 +608,7 @@ body {
   font-size: 16px;
   line-height: 1.5; }
 
-.form input[type="number"] {
+.form input[type="tel"] {
   width: 100%;
   padding: 6px 12px;
   background-color: #FBF2F2;
@@ -784,6 +784,12 @@ body {
   .store_list_btn:hover {
     background-color: #650300; }
 
+.store_list_img {
+  min-width: 348px;
+  height: 234px;
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/store-1.png?raw=true);
+  background-size: cover; }
+
 @media (min-width: 768px) {
   .store_list {
     -webkit-box-pack: justify;
@@ -791,7 +797,10 @@ body {
             justify-content: space-between;
     margin-bottom: -24px; }
     .store_list_card {
-      width: 48.5%; } }
+      width: 48.5%; }
+    .store_list_img {
+      min-width: 337px;
+      height: 224px; } }
 
 @media (min-width: 1200px) {
   .store_list {
@@ -804,7 +813,7 @@ body {
       margin-left: 12px;
       margin-right: 12px; }
     .store_list_img {
-      content: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/storepage-1.png?raw=true"); } }
+      background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/storepage-1.png?raw=true); } }
 
 @media (min-width: 768px) {
   .store_page {
@@ -849,6 +858,10 @@ body {
   display: none; }
   .blog_nav span {
     font-size: 30px; }
+    .blog_nav span:hover {
+      color: #dd0801; }
+  .blog_nav a:hover {
+    color: #dd0801; }
   @media (min-width: 768px) {
     .blog_nav {
       display: -webkit-box;
@@ -882,7 +895,7 @@ body {
     color: #AA0601; }
 
 @media (min-width: 768px) {
-  .blog_section li {
+  .blog_section_li {
     width: 48.5%; }
   .blog_content {
     overflow: hidden;
@@ -912,6 +925,9 @@ body {
 
 .blog_taglist {
   display: none; }
+  .blog_taglist a:hover {
+    -webkit-box-shadow: 0 2px #650300;
+            box-shadow: 0 2px #650300; }
 
 .blog_article {
   color: #555555; }
@@ -942,7 +958,7 @@ body {
     width: 72%; }
   .blog_article img {
     margin-bottom: 16px; }
-  .blog_article li {
+  .blog_article p {
     margin-bottom: 24px; }
   .blog_taglist {
     display: block;
@@ -960,7 +976,7 @@ body {
     font-size: 32px; }
   .blog_taglist a {
     font-size: 24px; }
-  .blog_article li {
+  .blog_article p {
     margin-bottom: 40px; }
   .blog_pagination {
     width: 72%; } }
